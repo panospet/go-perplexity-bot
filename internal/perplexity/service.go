@@ -91,7 +91,7 @@ func (s *Service) Ask(
 
 var DefaultPrompt = `This is a question asked via Perplexity API which will only be displayed inside a Telegram chat.
 Thus, answer it by following these rules strictly:
-- Including all sources as a list at the end of the message.
+- Including all sources as a list of hyperlinks at the end of the message. If no sources were needed, then don't add anything.
 - Format it accordingly to be pretty inside the telegram chat.
 - Answer by using the language the actual question is asked.
 
